@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1300.0" style="-fx-background-color: #E6E6FA;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.twoController">
+    <children>
+        <AnchorPane layoutX="-9.0" layoutY="82.0" prefHeight="796.0" prefWidth="1310.0" style="-fx-background-color: #87CEFA;">
+            <children>
+                <Label alignment="CENTER" layoutX="24.0" layoutY="426.0" prefHeight="38.0" prefWidth="334.0" text="Личные данные">
+                    <font>
+                        <Font name="Verdana" size="29.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="tablePasportfull" layoutX="25.0" layoutY="473.0" prefHeight="260.0" prefWidth="334.0">
+                    <columns>
+                        <TableColumn fx:id="idPasport" prefWidth="37.59999084472656" text="№" />
+                        <TableColumn fx:id="pasportDann" prefWidth="295.99999084472654" text="Паспортные данные" />
+                    </columns>
+                </TableView>
+                <Button fx:id="delMyData" layoutX="206.0" layoutY="750.0" mnemonicParsing="false" style="-fx-background-color: #E6E6FA;" text="Удаление ">
+                    <font>
+                        <Font name="Verdana Bold" size="12.0" />
+                    </font></Button>
+                <Button fx:id="addMyData" layoutX="91.0" layoutY="750.0" mnemonicParsing="false" style="-fx-background-color: #E6E6FA;" text="Добавление">
+                    <font>
+                        <Font name="Verdana Bold" size="12.0" />
+                    </font></Button>
+                <TableView fx:id="tableAbitfull" layoutX="23.0" layoutY="76.0" prefHeight="260.0" prefWidth="615.0">
+                    <columns>
+                        <TableColumn fx:id="idabit" prefWidth="37.600006103515625" text="№" />
+                        <TableColumn fx:id="fioAbit" prefWidth="100.79998397827148" text="ФИО" />
+                        <TableColumn fx:id="birthdayAbit" minWidth="0.0" prefWidth="122.39996337890625" text="Дата рождения" />
+                        <TableColumn fx:id="adressAbit" minWidth="0.0" prefWidth="172.0" text="Домашний адрес" />
+                        <TableColumn fx:id="telAbit" minWidth="0.0" prefWidth="140.800048828125" text="Телефон" />
+                    </columns>
+                </TableView>
+                <Label alignment="CENTER" layoutX="23.0" layoutY="37.0" prefHeight="38.0" prefWidth="615.0" text="Абитуриенты">
+                    <font>
+                        <Font name="Verdana" size="29.0" />
+                    </font>
+                </Label>
+                <Button fx:id="delAbit" layoutX="331.0" layoutY="347.0" mnemonicParsing="false" style="-fx-background-color: #E6E6FA;" text="Удаление">
+                    <font>
+                        <Font name="Verdana Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Button fx:id="addAbit" layoutX="214.0" layoutY="347.0" mnemonicParsing="false" style="-fx-background-color: #E6E6FA;" text="Добавление">
+                    <font>
+                        <Font name="Verdana Bold" size="12.0" />
+                    </font>
+                </Button>
+                <TableView fx:id="tableEducationfull" layoutX="658.0" layoutY="76.0" prefHeight="260.0" prefWidth="615.0">
+                    <columns>
+                        <TableColumn fx:id="idEduc" prefWidth="37.59999084472656" text="№" />
+                        <TableColumn fx:id="lastEduc" prefWidth="100.79998779296875" text="Пред-ее обр." />
+                        <TableColumn fx:id="numAtest" minWidth="0.0" prefWidth="122.39996337890625" text="№ аттестата" />
+                        <TableColumn fx:id="defBalAtest" minWidth="0.0" prefWidth="172.0" text="Ср. балл аттестата" />
+                        <TableColumn fx:id="specialnost" minWidth="0.0" prefWidth="140.800048828125" text="Специальность" />
+                    </columns>
+                </TableView>
+                <Label alignment="CENTER" layoutX="658.0" layoutY="37.0" prefHeight="38.0" prefWidth="615.0" text="Образование">
+                    <font>
+                        <Font name="Verdana" size="29.0" />
+                    </font>
+                </Label>
+                <Button fx:id="delEduc" layoutX="966.0" layoutY="347.0" mnemonicParsing="false" style="-fx-background-color: #E6E6FA;" text="Удаление">
+                    <font>
+                        <Font name="Verdana Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Button fx:id="addEduc" layoutX="858.0" layoutY="347.0" mnemonicParsing="false" style="-fx-background-color: #E6E6FA;" text="Добавление">
+                    <font>
+                        <Font name="Verdana Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Label alignment="CENTER" layoutX="373.0" layoutY="426.0" prefHeight="38.0" prefWidth="903.0" text="Родители">
+                    <font>
+                        <Font name="Verdana" size="29.0" />
+                    </font>
+                </Label>
+                <Button fx:id="addParents" layoutX="712.0" layoutY="750.0" mnemonicParsing="false" style="-fx-background-color: #E6E6FA;" text="Добавление">
+                    <font>
+                        <Font name="Verdana Bold" size="12.0" />
+                    </font>
+                </Button>
+                <TableView fx:id="tableParentsfull" layoutX="375.0" layoutY="473.0" prefHeight="260.0" prefWidth="903.0">
+                    <columns>
+                        <TableColumn fx:id="idRodich" prefWidth="24.800018310546875" text="№" />
+                        <TableColumn fx:id="fioMom" prefWidth="102.4000244140625" text="ФИО мамы" />
+                        <TableColumn fx:id="adressMom" minWidth="0.0" prefWidth="121.60003662109375" text="Дом-й ад-с мамы" />
+                        <TableColumn fx:id="telMom" minWidth="0.0" prefWidth="88.79998779296875" text="Тел. мамы" />
+                        <TableColumn fx:id="workMom" minWidth="0.0" prefWidth="117.60003662109375" text="Работа мамы" />
+                  <TableColumn fx:id="fioDad" minWidth="0.0" prefWidth="101.5999755859375" text="ФИО папы" />
+                  <TableColumn fx:id="adressDad" minWidth="0.0" prefWidth="108.7999267578125" text="Дом-й ад-с папы" />
+                  <TableColumn fx:id="telDad" minWidth="0.0" prefWidth="113.5999755859375" text="Тел. папы" />
+                  <TableColumn fx:id="workDad" minWidth="0.0" prefWidth="124.0" text="Работа папы" />
+                    </columns>
+                </TableView>
+            <Button fx:id="delParents" layoutX="825.0" layoutY="750.0" mnemonicParsing="false" style="-fx-background-color: #E6E6FA;" text="Удаление">
+               <font>
+                  <Font name="Verdana Bold" size="12.0" />
+               </font>
+            </Button>
+            <Pane fx:id="paneAbit" layoutX="168.0" layoutY="14.0" prefHeight="354.0" prefWidth="325.0" style="-fx-background-color: #AFEEEE;">
+               <children>
+                  <TextField fx:id="paneFioAbit" layoutX="13.0" layoutY="85.0" prefHeight="25.0" prefWidth="306.0" promptText="ФИО" />
+                  <TextField fx:id="paneBirthdayAbit" layoutX="13.0" layoutY="137.0" prefHeight="25.0" prefWidth="306.0" promptText="Дата рождения" />
+                  <TextField fx:id="paneAdressAbit" layoutX="10.0" layoutY="195.0" prefHeight="25.0" prefWidth="306.0" promptText="Домашний адрес" />
+                  <TextField fx:id="paneTelAbit" layoutX="10.0" layoutY="250.0" prefHeight="25.0" prefWidth="306.0" promptText="Телефон" />
+                  <Label layoutX="68.0" layoutY="22.0" prefHeight="25.0" prefWidth="202.0" text="Добавление абитуриента" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="paneAddAbit" layoutX="188.0" layoutY="301.0" mnemonicParsing="false" style="-fx-background-color: #E6E6FA;" text="Добавить">
+                     <font>
+                        <Font name="Verdana Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cancelAddAbit" layoutX="58.0" layoutY="301.0" mnemonicParsing="false" style="-fx-background-color: #E6E6FA;" text="Отмена">
+                     <font>
+                        <Font name="Verdana Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane fx:id="paneEduc" layoutX="796.0" layoutY="15.0" prefHeight="354.0" prefWidth="325.0" style="-fx-background-color: #AFEEEE;">
+               <children>
+                  <TextField fx:id="paneLastEduc" layoutX="13.0" layoutY="85.0" prefHeight="25.0" prefWidth="306.0" promptText="Предыдущее образование" />
+                  <TextField fx:id="paneNumAttestat" layoutX="13.0" layoutY="137.0" prefHeight="25.0" prefWidth="306.0" promptText="Номер аттестата" />
+                  <TextField fx:id="paneDefoultAttestat" layoutX="10.0" layoutY="195.0" prefHeight="25.0" prefWidth="306.0" promptText="Средний бал аттестата" />
+                  <TextField fx:id="paneSpecialnost" layoutX="10.0" layoutY="250.0" prefHeight="25.0" prefWidth="306.0" promptText="Специальность" />
+                  <Label layoutX="68.0" layoutY="22.0" prefHeight="25.0" prefWidth="202.0" text="Добавление образования" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="paneAddEduc" layoutX="188.0" layoutY="301.0" mnemonicParsing="false" style="-fx-background-color: #E6E6FA;" text="Добавить">
+                     <font>
+                        <Font name="Verdana Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cancelAddEduc" layoutX="58.0" layoutY="301.0" mnemonicParsing="false" style="-fx-background-color: #E6E6FA;" text="Отмена">
+                     <font>
+                        <Font name="Verdana Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane fx:id="paneMyData" layoutX="33.0" layoutY="407.0" prefHeight="354.0" prefWidth="325.0" style="-fx-background-color: #AFEEEE;">
+               <children>
+                  <TextField fx:id="panePasport" alignment="TOP_LEFT" layoutX="13.0" layoutY="85.0" prefHeight="122.0" prefWidth="306.0" promptText="Паспортные данные" />
+                  <Label layoutX="43.0" layoutY="30.0" prefHeight="25.0" prefWidth="240.0" text="Добавление личных данных" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="paneAddMyData" layoutX="188.0" layoutY="301.0" mnemonicParsing="false" style="-fx-background-color: #E6E6FA;" text="Добавить">
+                     <font>
+                        <Font name="Verdana Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cancelAddMyData" layoutX="58.0" layoutY="301.0" mnemonicParsing="false" style="-fx-background-color: #E6E6FA;" text="Отмена">
+                     <font>
+                        <Font name="Verdana Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane fx:id="paneParents" layoutX="549.0" layoutY="418.0" prefHeight="354.0" prefWidth="679.0" style="-fx-background-color: #AFEEEE;">
+               <children>
+                  <TextField fx:id="paneFioMom" layoutX="13.0" layoutY="85.0" prefHeight="25.0" prefWidth="306.0" promptText="ФИО" />
+                  <TextField fx:id="paneTelMom" layoutX="13.0" layoutY="184.0" prefHeight="25.0" prefWidth="306.0" promptText="Контактный телефон" />
+                  <TextField fx:id="paneAdressMom" layoutX="13.0" layoutY="131.0" prefHeight="25.0" prefWidth="306.0" promptText="Домашний адрес" />
+                  <TextField fx:id="paneWorkMom" layoutX="13.0" layoutY="238.0" prefHeight="25.0" prefWidth="306.0" promptText="Место работы" />
+                  <Label layoutX="239.0" layoutY="14.0" prefHeight="25.0" prefWidth="202.0" text="Добавление родителей" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="paneAddParents" layoutX="358.0" layoutY="301.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="126.0" style="-fx-background-color: #E6E6FA;" text="Добавить">
+                     <font>
+                        <Font name="Verdana Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cancelAddParents" layoutX="212.0" layoutY="301.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="107.0" style="-fx-background-color: #E6E6FA;" text="Отмена">
+                     <font>
+                        <Font name="Verdana Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="92.0" layoutY="50.0" prefHeight="25.0" prefWidth="148.0" text="Добавление мамы" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="437.0" layoutY="50.0" prefHeight="25.0" prefWidth="148.0" text="Добавление папы" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="paneFioDad" layoutX="358.0" layoutY="85.0" prefHeight="25.0" prefWidth="306.0" promptText="ФИО" />
+                  <TextField fx:id="paneTelDad" layoutX="358.0" layoutY="184.0" prefHeight="25.0" prefWidth="306.0" promptText="Контактный телефон" />
+                  <TextField fx:id="paneAdressDad" layoutX="358.0" layoutY="131.0" prefHeight="25.0" prefWidth="306.0" promptText="Домашний адрес" />
+                  <TextField fx:id="paneWorkDad" layoutX="358.0" layoutY="238.0" prefHeight="25.0" prefWidth="306.0" promptText="Место работы" />
+               </children>
+            </Pane>
+            </children>
+        </AnchorPane>
+        <Label alignment="CENTER" layoutX="-1.0" layoutY="23.0" prefHeight="54.0" prefWidth="1196.0" text="Приёмная комиссия">
+            <font>
+                <Font name="Comic Sans MS Bold" size="38.0" />
+            </font>
+        </Label>
+        <Button fx:id="mainButton" layoutX="14.0" layoutY="23.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="155.0" style="-fx-background-color: #E6E6FA; -fx-border-color: #000000;" text="На главную">
+            <font>
+                <Font name="Comic Sans MS Bold" size="15.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
